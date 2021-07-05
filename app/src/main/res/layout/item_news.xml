@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ECECEC"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_margin="8dp">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+    
+    <ImageView
+        android:id="@+id/iv_news_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_weight="8"
+        android:scaleType="fitXY"
+        ></ImageView>
+    <TextView
+        android:id="@+id/title_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/header"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"></TextView>
+    <TextView
+        android:id="@+id/description_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loremIpsum"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:layout_margin="10dp"
+        android:maxLines="3"
+        android:ellipsize="end"></TextView>
+    <TextView
+        android:id="@+id/author_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="author"
+        android:layout_weight="1"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="14sp"></TextView>
+</LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
